@@ -521,7 +521,8 @@ section.home .cta {
   max-width: 540px;
 }
 section.home .cta h1 {
-  font-size: 4em;
+  margin-top: 2em !important;
+  font-size: 3em;
   line-height: 0.9em;
 }
 section.home .cta p {
