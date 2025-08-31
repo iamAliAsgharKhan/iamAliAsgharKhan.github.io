@@ -1,0 +1,41 @@
+.heroBanner {
+  padding: 8rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  /* CHANGE: Use theme variables */
+  background-color: var(--ifm-background-color);
+  color: var(--ifm-font-color-base);
+}
+
+.heroTitle {
+  font-size: 4rem;
+  font-weight: 700;
+  /* CHANGE: Use theme variables */
+  color: var(--ifm-font-color-base);
+}
+
+.heroSubtitle {
+  font-size: 1.5rem;
+  /* CHANGE: Use theme variables */
+  color: var(--ifm-color-primary);
+}
+
+.heroDescription {
+  max-width: 600px;
+  margin: 1.5rem auto;
+  font-size: 1.1rem;
+}
+
+.contactButton {
+  /* CHANGE: Use theme variables */
+  background-color: var(--ifm-color-primary);
+  color: #FFFFFF; /* White text on the button is fine */
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.contactButton:hover {
+  /* CHANGE: Use theme variables */
+  background-color: var(--ifm-color-secondary-accent);
+}

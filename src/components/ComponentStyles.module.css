@@ -1,0 +1,121 @@
+/* Shared styles for portfolio sections */
+.section {
+  padding: 4rem 0;
+  /* CHANGE: Use theme variables */
+  background-color: var(--ifm-background-color);
+  color: var(--ifm-font-color-base);
+  border-bottom: 1px solid var(--ifm-background-surface-color);
+}
+
+/* Alternate gray background for visual separation */
+.sectionGray {
+  /* CHANGE: Use theme variables */
+  background-color: var(--ifm-background-surface-color);
+}
+
+.sectionTitle {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  /* CHANGE: Use theme variables */
+  color: var(--ifm-font-color-base);
+}
+
+/* Timeline and Item styling for Experience and Education */
+.timeline {
+  position: relative;
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.itemContainer {
+  padding: 1rem 2rem;
+  margin-bottom: 2rem;
+  position: relative;
+  /* CHANGE: Use theme variables */
+  background: var(--ifm-background-color);
+  border-left: 4px solid var(--ifm-color-primary);
+  border-radius: 0 8px 8px 0;
+}
+
+.sectionGray .itemContainer {
+  /* CHANGE: Use theme variables */
+  background: var(--ifm-background-surface-color);
+}
+
+.itemHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.itemTitle {
+  /* CHANGE: Use theme variables */
+  color: var(--ifm-font-color-base);
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.itemSubtitle {
+  /* CHANGE: Use theme variables */
+  color: var(--ifm-color-secondary-accent);
+  margin: 0 0 0.75rem 0;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.itemDates {
+  /* CHANGE: Use theme variables */
+  background-color: var(--ifm-color-primary);
+  color: #FFFFFF;
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  white-space: nowrap;
+}
+
+.itemDescription {
+  color: #bdc3c7; /* Lighter gray for readability is fine here */
+  line-height: 1.6;
+}
+
+/* Skills Section Styling */
+.skillsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.skillCategory {
+  /* CHANGE: Use theme variables */
+  background: var(--ifm-background-surface-color);
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.skillCategoryTitle {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  /* CHANGE: Use theme variables */
+  color: var(--ifm-color-primary);
+  border-bottom: 2px solid var(--ifm-background-color);
+  padding-bottom: 0.5rem;
+}
+
+.skillTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skillTag {
+  /* CHANGE: Use theme variables */
+  background-color: var(--ifm-background-color);
+  color: var(--ifm-font-color-base);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}

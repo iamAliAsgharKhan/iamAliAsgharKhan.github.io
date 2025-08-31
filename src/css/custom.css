@@ -1,0 +1,97 @@
+/**
+ * Any CSS you write here will be bundled into the site's main CSS file.
+ */
+
+/* Root variables for the light theme */
+:root {
+  --ifm-color-primary: #16A085; /* Jungle Green */
+  --ifm-color-primary-dark: #138a72;
+  --ifm-color-primary-darker: #117d68;
+  --ifm-color-primary-darkest: #0e6655;
+  --ifm-color-primary-light: #19b598;
+  --ifm-color-primary-lighter: #1bc2a2;
+  --ifm-color-primary-lightest: #20e3be;
+  
+  /* Your custom colors as variables for easy access */
+  --ifm-color-secondary-accent: #F39C12; /* Orange */
+  --ifm-dark-background: #2C3E50; /* Midnight Blue */
+  --ifm-dark-surface: #34495e; /* Lighter dark for surfaces */
+  --ifm-light-text: #ECF0F1; /* Clouds */
+}
+
+/* Root variables for the dark theme */
+/* Docusaurus adds a `data-theme='dark'` attribute to the html tag */
+[data-theme='dark'] {
+  --ifm-background-color: #2C3E50; /* Main background is Midnight Blue */
+  --ifm-background-surface-color: #34495e; /* Card/section background is the lighter dark */
+  --ifm-font-color-base: #ECF0F1; /* Base text color is Clouds */
+  --ifm-color-secondary-accent: #F39C12;
+
+  --ifm-color-primary: #16A085;
+  --ifm-color-primary-dark: #138a72;
+  --ifm-color-primary-darker: #117d68;
+  --ifm-color-primary-darkest: #0e6655;
+  --ifm-color-primary-light: #19b598;
+  --ifm-color-primary-lighter: #1bc2a2;
+  --ifm-color-primary-lightest: #20e3be;
+}
+
+
+/* ADD THIS TO THE END OF THE FILE */
+
+/* ------------------- */
+/* BLOG STYLING        */
+/* ------------------- */
+
+/* Center the main blog content and give it a max-width for readability */
+main[class*='blog-list-page'] > div {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Style the blog post titles in the list */
+[class*='blog-list-page'] h2 a {
+  color: var(--ifm-color-primary);
+  transition: color 0.3s ease;
+}
+
+[class*='blog-list-page'] h2 a:hover {
+  color: var(--ifm-color-secondary-accent);
+}
+
+/* Style the "Read More" link */
+a[class*='readMore'] {
+  color: var(--ifm-font-color-base);
+  font-weight: bold;
+  border: 1px solid var(--ifm-color-primary);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+a[class*='readMore']:hover {
+  background-color: var(--ifm-color-primary);
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+/* Style the tags */
+a[class*='tag_'] {
+  background-color: var(--ifm-background-surface-color);
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+a[class*='tag_']:hover {
+  border-color: var(--ifm-color-secondary-accent);
+  background-color: var(--ifm-background-color);
+}
+
+/* ADD THIS TO THE END OF THE FILE */
+
+/* --- Custom Navbar Logo Size --- */
+.navbar__logo img {
+  /* The default is around 2rem. Increase this value to make the logo bigger. */
+  height: 2.5rem; 
+  width: auto; /* This maintains the aspect ratio */
+}
