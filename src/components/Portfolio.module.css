@@ -177,3 +177,37 @@
 .loadMoreButton:hover {
     background-color: var(--ifm-color-secondary-accent);
 }
+
+
+/* ADD THIS TO THE END OF THE FILE */
+
+/* --- Enhanced Modal Detail Styles --- */
+
+.modalSubtitle {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--ifm-color-primary);
+  border-bottom: 1px solid var(--ifm-background-color);
+  padding-bottom: 0.5rem;
+}
+
+.featuresList {
+  padding-left: 20px;
+  line-height: 1.8;
+}
+
+.techStack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.techTag {
+  background-color: var(--ifm-background-color);
+  color: var(--ifm-font-color-secondary);
+  padding: 0.4rem 0.8rem;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+}

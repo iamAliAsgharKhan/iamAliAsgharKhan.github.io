@@ -124,7 +124,7 @@ const config = {
             {
               label: 'LinkedIn',
               // TODO: Replace with your actual LinkedIn profile URL
-              href: 'https://www.linkedin.com/in/YOUR_USERNAME',
+              href: 'https://www.linkedin.com/in/ialiasgharkhan',
             },
             {
               label: 'GitHub',
