@@ -9,7 +9,7 @@ import Education from '../components/Education';
 import Skills from '../components/Skills';
 import Portfolio from '../components/Portfolio';
 import ContactForm from '../components/ContactForm';
-
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 
 function HomepageHeader() {
@@ -32,10 +32,17 @@ function HomepageHeader() {
         </p>
         <div className={styles.buttons}>
           <button
-            className={`button button--secondary button--lg ${styles.contactButton}`}
+            className={`button button--lg ${styles.primaryButton}`}
             onClick={handleContactClick}>
             Get In Touch
           </button>
+
+          <a
+            className={`button button--lg ${styles.secondaryButton}`}
+            href={useBaseUrl('/files/ali-asghar-resume.pdf')}
+            download>
+            Download CV
+          </a>
         </div>
       </div>
     </header>

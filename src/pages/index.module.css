@@ -39,3 +39,60 @@
   /* CHANGE: Use theme variables */
   background-color: var(--ifm-color-secondary-accent);
 }
+
+/* Find and replace or add this .buttons style */
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem; /* This adds a nice space between the buttons */
+}
+
+/* You might have a .contactButton class, let's rename it for clarity */
+.heroButton {
+  /* Copy any styles you had for .contactButton here */
+  /* For example: */
+  color: #FFFFFF !important;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+/* This is just to ensure the primary button uses your theme color */
+.heroButton.button--primary {
+    background-color: var(--ifm-color-primary);
+}
+.heroButton.button--primary:hover {
+    background-color: var(--ifm-color-secondary-accent);
+}
+
+/*
+  DELETE ALL THE OLD BUTTON STYLES (.contactButton, .heroButton, etc.)
+  AND REPLACE THEM WITH THIS FINAL, CORRECT BLOCK.
+*/
+
+/* --- Primary "Get In Touch" Button --- */
+.primaryButton {
+  background-color: var(--ifm-color-primary) !important;
+  color: #FFFFFF !important;
+  border: none !important;
+  transition: background-color 0.3s ease !important;
+}
+
+.primaryButton:hover {
+  background-color: var(--ifm-color-secondary-accent) !important;
+}
+
+
+/* --- Secondary "Download CV" Button --- */
+.secondaryButton {
+  background-color: transparent !important;
+  border: 2px solid var(--ifm-font-color-base) !important;
+  color: var(--ifm-font-color-base) !important;
+  transition: all 0.3s ease !important;
+}
+
+.secondaryButton:hover {
+  background-color: var(--ifm-color-secondary-accent) !important;
+  border-color: var(--ifm-color-secondary-accent) !important;
+  color: var(--ifm-dark-background) !important;
+}
