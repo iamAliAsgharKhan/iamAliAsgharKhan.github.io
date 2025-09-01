@@ -96,3 +96,44 @@
   border-color: var(--ifm-color-secondary-accent) !important;
   color: var(--ifm-dark-background) !important;
 }
+
+/* ADD THIS BLOCK AT THE END OF THE FILE for mobile responsiveness */
+@media screen and (max-width: 768px) {
+  .heroBanner {
+    padding: 4rem 1rem; /* Reduced vertical padding, added horizontal padding */
+  }
+
+  .heroTitle {
+    font-size: 2.5rem; /* Reduced title font size */
+  }
+
+  .heroSubtitle {
+    font-size: 1.2rem; /* Reduced subtitle font size */
+  }
+
+  .heroDescription {
+    font-size: 1rem; /* Slightly smaller description text */
+  }
+
+  .buttons {
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: stretch; /* Make buttons take up the full width of their container */
+  }
+
+  /* You might need to target the button components themselves if they are anchor tags */
+  .primaryButton,
+  .secondaryButton {
+    width: 100%; /* Ensure buttons are full-width for a cleaner, stacked look */
+    margin: 0.5rem 0; /* Add some vertical spacing between stacked buttons */
+  }
+}
+
+/* For very small screens, let's refine further */
+@media screen and (max-width: 480px) {
+  .heroTitle {
+    font-size: 2.2rem;
+  }
+  .heroBanner {
+    padding: 3rem 1rem;
+  }
+}
